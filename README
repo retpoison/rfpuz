@@ -1,0 +1,27 @@
+rfpuz
+=====
+15 puzzle with raylib.
+
+
+Dependencies
+------------
+raylib.
+
+
+Installation
+------------
+run
+    git clone https://github.com/retpoison/rfpuz.git
+    cd rfpuz
+    make
+    ./rfpuz
+
+
+Keybindings
+-----------
+Esc |--------Exit
+
+
+Flags
+-----
+-l, --light     light background.
