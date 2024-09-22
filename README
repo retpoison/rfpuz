@@ -24,4 +24,5 @@ Esc |--------Exit
 
 Flags
 -----
--l, --light     light background.
+-l      light background.
+-s num  size of board.
