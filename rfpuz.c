@@ -20,7 +20,8 @@ struct Game
 init_game(void)
 {
 	struct Game g = { 0, 0, {{0}}, {0}, BLACK, WHITE };
-	fp_generate(PZL_SIZE, g.board);
+	fp_set_size(PZL_SIZE);
+	fp_generate(g.board);
 	return g;
 }
 
