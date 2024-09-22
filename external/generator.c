@@ -3,12 +3,9 @@
 
 #include "fpuz.h"
 
-int FP_SIZE;
-
 void
-fp_generate(int size, int a[size][size])
+fp_generate(int a[FP_SIZE][FP_SIZE])
 {
-	FP_SIZE = size;
 	int i, j;
 	for (i = 0; i < FP_SIZE; i++)
 		for (j = 0; j < FP_SIZE; j++)

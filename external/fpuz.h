@@ -27,21 +27,22 @@ enum direction {
 
 /* utils */
 
+void fp_set_size(int s);
 int fp_abs(int n);
 void fp_swap_cell(struct fp_Cell *a, struct fp_Cell *b);
 void fp_swap_pos(struct fp_Pos *a, struct fp_Pos *b);
-void fp_print(int size, int a[size][size]);
+void fp_print(int a[FP_SIZE][FP_SIZE]);
 int fp_is_solvable(int a[FP_SIZE][FP_SIZE]);
 int fp_get_inversions(int a[]);
 
 /* generator */
 
-void fp_generate(int size, int a[size][size]);
+void fp_generate(int a[FP_SIZE][FP_SIZE]);
 void fp_shuffle(int a[FP_SIZE][FP_SIZE]);
 
 /* solver */
 
-struct fp_Answer *fp_solve(int size, int p[size][size]);
+struct fp_Answer *fp_solve(int p[FP_SIZE][FP_SIZE]);
 
 int fp_solve_puzzle(struct fp_Cell a[FP_SIZE][FP_SIZE],
 		    struct fp_Pos start, struct fp_Pos *epos);
